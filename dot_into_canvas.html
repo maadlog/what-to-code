@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+        <head>
+                <script type="text/javascript">
+                GameBox = function()
+                {
+                    this.lastFrameTime = Date.now();
+                    this.currentFrameTime = Date.now();
+                    this.timeElapsed = 0;
+                    //this.updateInterval = 500;       //in ms
+                }
+
+                GameBox.prototype.gameLoop = function()
+                {
+                   window.requestAnimationFrame(this.gameLoop.bind(this));
+                   this.lastFrameTime = this.currentFrameTime;
+                   this.currentFrameTime = Date.now();
+                   this.timeElapsed +=  this.currentFrameTime - this.lastFrameTime ;
+                 //  if(this.timeElapsed >= this.updateInterval)
+                  // {
+                      this.update(this.timeElapsed / 100); //modify data which is used to render
+                      this.timeElapsed = 0;
+                 //  }
+                   this.render();
+                }
+
+                let MaxX = 394;
+                let MinX = 106;
+                let MaxY = 394;
+                let MinY = 106;
+
+                var direction = { x: 0.088, y:0.146 };
+                var speed = 8;
+                var pos = { x: 250, y:250 };
+
+                var colors = ["#FF0000","#FFFF00","#FF00FF","#00FF00","#0000FF"]
+                var colorIndex=  0;
+                var changedColor = false;
+                var ctx = {};
+                GameBox.prototype.update = function(timeElapsed){
+
+                        speed = document.getElementById('Speed').value;
+
+                        pos = this.getNextPos(timeElapsed);
+                      
+                                var update = false;
+                                var normal = { x:0 , y:0 }
+                                if (pos.x >= MaxX)
+                                {
+                                        update = true;
+                                        normal = { x:-1 , y:0 }
+                                }
+                                if (pos.x <= MinX)
+                                {
+                                        update = true;
+                                        normal = { x:1 , y:0 }
+                                }
+                                if (pos.y >= MaxY)
+                                {
+                                        update = true;
+                                        normal = { x:0 , y:-1 }
+                                }
+                                if (pos.y <= MinY)
+                                {
+                                        update = true;
+                                        normal = { x:0 , y:1 }
+                                }
+
+                                
+
+                                 if(update)
+                                {
+                                        direction = this.reflect(direction, normal);
+                                        colorIndex += 1; 
+                                        if (colorIndex >= colors.length)  colorIndex -= colors.length;
+                                        changedColor = true;
+                
+
+                                }        
+                       
+                        if (pos.x <= 0 || pos.y <= 0 || pos.x >= 500 /*canvas.width*/ || pos.y >= 500 /*canvas.height*/){
+                                        pos = { x: 250, y:250 };
+                                }
+                        
+                }
+
+
+                GameBox.prototype.dot = function dot( a, b )
+                        {
+                            return ( a.x * b.x ) + ( a.y * b.y );
+                        }
+
+                GameBox.prototype.reflect = function(vector, normal){
+                        
+                            // using the formula [R = V - (2 * V.N) * N] or [V -= 2 * N * (N.V)]
+                            var vn2 = 2.0 * this.dot( vector, normal );
+                            return { 
+                                x: vector.x - ( normal.x * vn2 ),
+                                y: vector.y - ( normal.y * vn2 )
+                        }
+                             
+
+                }
+
+                GameBox.prototype.getNextPos = function(timeElapsed)
+                {
+                       
+                        return { 
+                                x: pos.x + direction.x * timeElapsed * speed * 10,
+                                y: pos.y + direction.y * timeElapsed * speed * 10,
+                        }
+
+                }
+
+                GameBox.prototype.render= function(){
+                        
+                        ctx.clearRect(0, 0, 500 /*canvas.width*/, 500 /*canvas.height*/);
+                        
+                        if (changedColor){
+                                        ctx.fillStyle= colors[colorIndex];
+                                        changedColor = false;                                
+                        }
+                       
+                        ctx.beginPath();
+                        ctx.arc(pos.x, pos.y, 6, 0, 2 * Math.PI, true);
+                        ctx.fill();
+                        ctx.rect(100,100,300,300);
+                        ctx.stroke();
+                }
+
+                function Init(){
+                        ctx = document.getElementById('a').getContext("2d");
+                        var a = new GameBox();
+                        a.gameLoop();
+                }
+                </script>
+        </head>
+<body onload="Init()">
+        <canvas id="a" width="500" height="500"></canvas>       
+        <input type="text" name="Speed" Id="Speed" value="8">
+</body>
+</html>
