@@ -5,7 +5,10 @@ Ideas for what to code
  + DnD Dungeon generator
 
 ### Games
- + Tamagotchi (Lib. for file saving to save state beside cookies https://github.com/eligrey/FileSaver.js)
+ + Tamagotchi
+   - Lib. for file saving to save state beside cookies (https://github.com/eligrey/FileSaver.js)
+   - State auto save in cookies (https://www.w3schools.com/js/tryit.asp?filename=tryjs_cookie_username)
+   - https://www.w3schools.com/js/js_cookies.asp)
  + Snake w/powerups
  + Doodle Jump
  + Endless Runner
