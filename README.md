@@ -1,10 +1,10 @@
 # what-to-code
 Ideas for what to code
 
-###Offline Apps
+### Offline Apps
  + DnD Dungeon generator
 
-###Games
+### Games
  + Tamagotchi
  + Snake w/powerups
  + Doodle Jump
@@ -12,3 +12,6 @@ Ideas for what to code
  
 ### Upgrades
  + Support into Github Page
+
+### Graphics
+ + Roots of a Complex Number (http://demonstrations.wolfram.com/RootsOfAComplexNumber/)
