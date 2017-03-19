@@ -19,4 +19,5 @@ Ideas for what to code
  + Support into Github Page
 
 ### Graphics
- + Roots of a Complex Number (http://demonstrations.wolfram.com/RootsOfAComplexNumber/)
+ + ~~Roots of a Complex Number (http://demonstrations.wolfram.com/RootsOfAComplexNumber/)~~ Done! [Here](https://github.com/maadlog/ComplexRoots)
+ 
