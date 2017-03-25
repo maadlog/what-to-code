@@ -4,6 +4,9 @@ Ideas for what to code
 ### Offline Apps
  + DnD Dungeon generator
 
+### Online Apps
+ + Office LAN Rockolla
+
 ### Games
  + Tamagotchi
    - Lib. for file saving to save state beside cookies (https://github.com/eligrey/FileSaver.js)
@@ -17,6 +20,7 @@ Ideas for what to code
  
 ### Upgrades
  + Support into Github Page
+ + Github page to advanced Jekyll
 
 ### Graphics
  + ~~Roots of a Complex Number (http://demonstrations.wolfram.com/RootsOfAComplexNumber/)~~ Done! [Here](https://github.com/maadlog/ComplexRoots)
