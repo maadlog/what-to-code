@@ -10,6 +10,7 @@ Ideas for what to code
    - State auto save in cookies (https://www.w3schools.com/js/tryit.asp?filename=tryjs_cookie_username)
    - https://www.w3schools.com/js/js_cookies.asp
    - http://davetayls.me/blog/2013/02/11/drawing-sprites-with-canvas
+   - http://makepixelart.com/free/# (Pixel)
  + Snake w/powerups
  + Doodle Jump
  + Endless Runner
