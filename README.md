@@ -19,7 +19,9 @@ Ideas for what to code
  + Llama Evolution
  
 ### Upgrades
- + Support into Github Page
+ + TadPBot to support Github Page & GDoc
+   - Parse raw MD raw.githubusercontent.com  
+   - https://developers.google.com/sheets/
  + Github page to advanced Jekyll
 
 ### Graphics
