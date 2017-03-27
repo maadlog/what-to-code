@@ -1,9 +1,6 @@
 # what-to-code
 Ideas for what to code
 
-### Offline Apps
- + DnD Dungeon generator
-
 ### Online Apps
  + Office LAN Rockolla
 
