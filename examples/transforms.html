@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+        <head>
+                <script type="text/javascript">
+                GameBox = function()
+                {
+                    this.lastFrameTime = Date.now();
+                    this.currentFrameTime = Date.now();
+                    this.timeElapsed = 0;
+                    //this.updateInterval = 500;       //in ms
+                }
+                
+                GameBox.prototype.gameLoop = function()
+                {
+                   window.requestAnimationFrame(this.gameLoop.bind(this));
+                   this.lastFrameTime = this.currentFrameTime;
+                   this.currentFrameTime = Date.now();
+                   this.timeElapsed +=  this.currentFrameTime - this.lastFrameTime ;
+                 //  if(this.timeElapsed >= this.updateInterval)
+                  // {
+                      this.update(this.timeElapsed / 100); //modify data which is used to render
+                      this.timeElapsed = 0;
+                 //  }
+                   this.render();
+                }
+               
+                var ctx;
+                var canvasWidth;
+                var canvasHeight;
+
+                GameBox.prototype.update = function(timeElapsed)
+                {
+
+                }
+
+                GameBox.prototype.render= function()
+                {
+                    ctx.clearRect(0, 0, canvasWidth, canvasHeight);
+
+                    var sin = Math.sin(Math.PI / 6);
+                    var cos = Math.cos(Math.PI / 6);
+                    ctx.translate(100, 100);
+                    var c = 0;
+                    for (var i = 0; i <= 12; i++) 
+                    {
+                        c = Math.floor(255 / 12 * i);
+                        ctx.fillStyle = 'rgb(' + c + ', ' + c + ', ' + c + ')';
+                        ctx.fillRect(0, 0, 100, 10);
+                        ctx.transform(cos, sin, -sin, cos, 0, 0);
+                    }
+                      
+                    ctx.setTransform(-1, 0, 0, 1, 100, 100);
+                    ctx.fillStyle = 'rgba(255, 128, 255, 0.5)';
+                    ctx.fillRect(0, 50, 100, 100);
+
+                    ctx.resetTransform();
+                    
+                }
+
+                function Init(){
+                    var canvas = document.getElementById('canvas')
+                        ctx = canvas.getContext("2d");
+                        canvasWidth = canvas.width;
+                        canvasHeight = canvas.height;
+                        var game = new GameBox();
+                        game.gameLoop();
+                }
+                </script>
+        </head>
+<body onload="Init()">
+        <canvas id="canvas" width="500" height="500"></canvas>
+</body>
+</html>
