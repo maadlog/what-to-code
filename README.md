@@ -11,6 +11,7 @@ Ideas for what to code
    - https://www.w3schools.com/js/js_cookies.asp
    - http://davetayls.me/blog/2013/02/11/drawing-sprites-with-canvas
    - http://makepixelart.com/free/# (Pixel)
+   - https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Transformations (Transforms on Canvas)
  + Snake w/powerups
  + Doodle Jump
  + Endless Runner
