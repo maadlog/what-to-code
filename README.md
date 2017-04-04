@@ -16,6 +16,7 @@ Ideas for what to code
  + Doodle Jump
  + Endless Runner
  + Llama Evolution
+   - Living points ecosistem
  
 ### Upgrades
  + TadPBot to support Github Page & GDoc
