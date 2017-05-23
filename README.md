@@ -24,6 +24,7 @@ Ideas for what to code
    - https://developers.google.com/sheets/
  + Github page to advanced Jekyll
 
-### Graphics
+### Graphics and Math
  + ~~Roots of a Complex Number (http://demonstrations.wolfram.com/RootsOfAComplexNumber/)~~ Done! [Here](https://github.com/maadlog/ComplexRoots)
  
+ + Resolutor for Jacobi and Gauss Seidel methods on linear eq. systems. (3x3, and 2x2)
