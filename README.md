@@ -27,4 +27,4 @@ Ideas for what to code
 ### Graphics and Math
  + ~~Roots of a Complex Number (http://demonstrations.wolfram.com/RootsOfAComplexNumber/)~~ Done! [Here](https://github.com/maadlog/ComplexRoots)
  
- + Resolutor for Jacobi and Gauss Seidel methods on linear eq. systems. (3x3, and 2x2)
+ + ~~Resolutor for Jacobi and Gauss Seidel methods on linear eq. systems. (3x3, and 2x2)~~ Done! [Here] (https://github.com/maadlog/LES.Solver)
