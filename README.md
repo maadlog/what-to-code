@@ -6,7 +6,7 @@ Ideas for what to code
 
 ### Offline Apps
  + Music Shuffler
-  - Powered by (Electron)[https://electron.atom.io/] 
+   - Powered by [Electron](https://electron.atom.io/)
 
 ### Games
  + Tamagotchi
