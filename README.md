@@ -4,6 +4,10 @@ Ideas for what to code
 ### Online Apps
  + Office LAN Rockolla
 
+### Offline Apps
+ + Music Shuffler
+  - Powered by (Electron)[https://electron.atom.io/] 
+
 ### Games
  + Tamagotchi
    - Lib. for file saving to save state beside cookies (https://github.com/eligrey/FileSaver.js)
