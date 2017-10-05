@@ -3,10 +3,17 @@ Ideas for what to code
 
 ### Online Apps
  + Office LAN Rockolla
+   - https://www.codeproject.com/Articles/19485/A-Voice-Chat-Application-in-C
+   - https://stackoverflow.com/questions/991766/send-sound-or-stream-sound-over-lan
+   - https://stackoverflow.com/questions/184683/play-audio-from-a-stream-using-c-sharp
 
-### Offline Apps
+### Projects
  + Music Shuffler
    - Powered by [Electron](https://electron.atom.io/)
+ + Reflex
+   - Budget System for Photographers
+ + Bonavena
+   - Lightweight DAO for .NET and NET.CORE (in progress) [Here](https://github.com/maadlog/Bonavena)
 
 ### Games
  + Tamagotchi
