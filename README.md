@@ -28,6 +28,10 @@ Ideas for what to code
  + Endless Runner
  + Llama Evolution
    - Living points ecosistem
+   
+### Apps
+ + Delibird
+   Gifts shuffler
  
 ### Upgrades
  + TadPBot to support Github Page & GDoc
