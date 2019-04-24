@@ -32,7 +32,10 @@ Ideas for what to code
 ### Apps
  + Delibird
    Gifts shuffler
- 
+
+### Telegram Bots
+ + Roll Dices
+
 ### Upgrades
  + TadPBot to support Github Page & GDoc
    - Parse raw MD raw.githubusercontent.com  
