@@ -30,8 +30,7 @@ Ideas for what to code
    - Living points ecosistem
    
 ### Apps
- + Delibird
-   Gifts shuffler
+ + Delibird Gifts shuffler (in progress) [Here](https://github.com/maadlog/delibird-api)
 
 ### Telegram Bots
  + Roll Dices
