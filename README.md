@@ -31,14 +31,9 @@ Ideas for what to code
    
 ### Apps
  + Delibird Gifts shuffler (in progress) [Here](https://github.com/maadlog/delibird-api)
-
-### Telegram Bots
- + Roll Dices
+ + Trazar tracker (in progress) [Here](https://github.com/maadlog/trazar)
 
 ### Upgrades
- + TadPBot to support Github Page & GDoc
-   - Parse raw MD raw.githubusercontent.com  
-   - https://developers.google.com/sheets/
  + Github page to advanced Jekyll
 
 ### Graphics and Math
