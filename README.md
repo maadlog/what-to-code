@@ -14,6 +14,8 @@ Ideas for what to code
    - Budget System for Photographers
  + Bonavena
    - Lightweight DAO for .NET and NET.CORE (in progress) [Here](https://github.com/maadlog/Bonavena)
+ + TBD
+   - Something something recipe book + calculator
 
 ### Games
  + Tamagotchi
